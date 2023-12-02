@@ -3,30 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors Game</title>
+    <title>Harry Potter Game</title>
     <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="console-container">
-      <div id="head">
-        <h1>Harry Potter Game</h1>
-        <h2>
-          Your devotion is nothing more than cowardice. You would not be here if
-          you had anywhere else to go
-        </h2>
-      </div>
-      <div id="game">
-        <div class="buttons">
-          <button id="rockBtn">Rock</button>
-          <button id="paperBtn">Paper</button>
-          <button id="scissorsBtn">Scissors</button>
+    <div id="head">
+      <h1>Save Dobby</h1>
+      <h2>
+        "Your devotion is nothing more than cowardice. You would not be here if
+        you had anywhere else to go"
+      </h2>
+      <h3>First To 5 Wins!</h3>
+    </div>
+
+    <div id="game-boy-container">
+      <div id="game-boy">
+        <div id="game-boy-screen">
+          <div id="game">
+            <div class="buttons">
+              <button id="rockBtn">Rock</button>
+              <button id="paperBtn">Paper</button>
+              <button id="scissorsBtn">Scissors</button>
+            </div>
+            <div class="results"></div>
+            <div id="playerScore"></div>
+            <div id="computerScore"></div>
+            <div id="finalMessage"></div>
+            <div id="quoteResults"></div>
+          </div>
         </div>
-        <div class="results"></div>
-        <div id="playerScore"></div>
-        <div id="computerScore"></div>
-        <div id="finalMessage"></div>
-        <div id="quoteResults"></div>
+        <div id="console-container"></div>
       </div>
+    </div>
+    <div class="footer">
+      &copy; 2023 Save Dobby. All rights reserved. | Inspired by Harry Potter |
+      Developed by João Correia
     </div>
     <script src="index.js"></script>
   </body>

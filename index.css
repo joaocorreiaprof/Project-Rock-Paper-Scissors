@@ -1,39 +1,84 @@
 body {
+  background-image: url("/images/wall.jpg");
+  background-size: cover;
+  font-family: "Cinzel Decorative", sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url("images/backgroundImg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  font-family: "Courier New", monospace;
+}
+
+#head {
+  text-align: center;
+  margin-top: 0; /* Updated margin to remove space */
+  padding: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #ffd700; /* Gold color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 10px; /* Added margin to separate from h1 */
+  margin-bottom: 20px; /* Increased margin for better spacing */
+  color: #ffa500; /* Orange color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: -4px; /* Added margin for separation */
+  margin-bottom: -46px; /* Adjusted margin for better spacing */
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 #game-boy-container {
-  background-image: url("images/gameboy_color_background.jpg"); /* Substitua pelo caminho real da imagem do Game Boy Color */
-  background-size: cover;
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 50px auto;
-  max-width: 600px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Adjusted height for better visibility */
 }
 
-#console-container {
-  background-color: #5e5e5e; /* Cor cinza semelhante à aparência do Game Boy Color */
-  border-radius: 10px;
-  padding: 20px;
+#game-boy {
+  position: relative;
+  background-color: #8bacae;
+  border: 10px solid #393939;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 300px;
+  height: 641px;
+}
+
+#game-boy-screen {
+  background-color: #000;
+  height: 52%;
   margin: 20px;
 }
 
+#console-container {
+  background-color: #5e5e5e;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
 .buttons button {
-  background-color: #b7b7b7; /* Cor dos botões do Game Boy Color */
-  color: #000; /* Cor do texto nos botões */
+  background-color: #393939;
+  color: #fff;
   padding: 10px;
   font-size: 16px;
-  margin: 5px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -46,7 +91,7 @@ body {
 #quoteResults {
   margin-top: 20px;
   font-size: 18px;
-  color: #000; /* Cor do texto dentro da área de jogo */
+  color: #fff;
 }
 
 #quoteResults {
@@ -58,16 +103,12 @@ body {
   font-size: 24px;
 }
 
-#head {
+.footer {
+  background-color: #1c1c1c;
+  color: #fff;
   text-align: center;
-  margin-bottom: 30px;
-}
-
-h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 16px;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
