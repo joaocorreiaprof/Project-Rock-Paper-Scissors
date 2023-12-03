@@ -85,19 +85,19 @@ h2 {
 }
 
 #rockBtn {
-  background-image: url("/images/rockfall-99146_1280.png");
+  background-image: url("./images/rockfall-99146_1280.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 #paperBtn {
-  background-image: url("/images/paper-airplane-1078889_1280.png");
+  background-image: url("./images/paper-airplane-1078889_1280.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 #scissorsBtn {
-  background-image: url("/images/cut-1297554_1280.png");
+  background-image: url("./images/cut-1297554_1280.png");
   background-size: 94%;
   background-repeat: no-repeat;
 }
