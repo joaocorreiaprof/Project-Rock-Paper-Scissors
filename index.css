@@ -1,7 +1,7 @@
 body {
   background-image: url("./images/wall.jpg");
   background-size: cover;
-  font-family: "Cinzel Decorative", sans-serif;
+  font-family: "Pixel Font", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -27,6 +27,7 @@ h2 {
   color: #ffa500;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
+
 #game-boy-container {
   display: flex;
   justify-content: center;
@@ -38,23 +39,23 @@ h2 {
 #game-boy {
   position: absolute;
   top: 0;
-  background-color: #8bacae;
-  border: 10px solid #393939;
+  background-color: #ff0000;
+  border: 10px solid #000;
   border-radius: 20px;
   overflow: hidden;
-  width: 300px;
+  width: 348px;
   height: 641px;
   z-index: 2;
 }
 
 #game-boy-screen {
   background-color: #000;
-  height: 52%;
+  height: 46%;
   margin: 20px;
 }
 
 #console-container {
-  background-color: #5e5e5e;
+  background-color: #333;
   border-radius: 10px;
   padding: 20px;
 }
@@ -72,11 +73,33 @@ h2 {
 .buttons button {
   background-color: #393939;
   color: #fff;
-  padding: 10px;
-  font-size: 16px;
+  padding: 0;
+  width: 60px;
+  height: 60px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 50%;
+  margin: 0 5px;
+  font-size: 0;
+  line-height: 1;
+}
+
+#rockBtn {
+  background-image: url("/images/rockfall-99146_1280.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#paperBtn {
+  background-image: url("/images/paper-airplane-1078889_1280.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#scissorsBtn {
+  background-image: url("/images/cut-1297554_1280.png");
+  background-size: 94%;
+  background-repeat: no-repeat;
 }
 
 .results,
@@ -86,11 +109,12 @@ h2 {
 #quoteResults {
   margin-top: 20px;
   font-size: 18px;
-  color: #fff;
+  color: white;
 }
 
 #quoteResults {
   font-style: italic;
+  color: white;
 }
 
 #finalMessage {
