@@ -39,11 +39,11 @@ h2 {
 #game-boy {
   position: relative;
   top: 0;
-  background-color: blue;
+  background-color: red;
   border: 10px solid #000;
   border-radius: 20px;
   overflow: hidden;
-  width: 33%;
+  width: 20%;
   height: 95%;
 }
 
