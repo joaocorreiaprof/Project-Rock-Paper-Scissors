@@ -39,12 +39,12 @@ h2 {
 #game-boy {
   position: relative;
   top: 0;
-  background-color: green;
+  background-color: blue;
   border: 10px solid #000;
   border-radius: 20px;
   overflow: hidden;
-  width: 348px;
-  height: 641px;
+  width: 33%;
+  height: 95%;
 }
 
 #game-boy-screen {
@@ -122,12 +122,10 @@ h2 {
 }
 
 .footer {
-  background-color: #1c1c1c;
-  color: #fff;
-  text-align: center;
-  padding: 5px;
-  bottom: 0;
-  width: 98.85%;
-  position: relative;
-  clear: both;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+  font-weight: 530;
 }
